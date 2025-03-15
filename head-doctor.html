@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>EL COSMO - Главная</title>
-	<meta property="og:title" content="EL COSMO - Главная">
+	<title>EL COSMO - Главный врач</title>
+	<meta property="og:title" content="EL COSMO - Главный врач">
 	<meta property="og:description" content="Описание">
 	<meta property="og:url" content="/">
-	<meta property="og:site_name" content="EL COSMO - Главная">
+	<meta property="og:site_name" content="EL COSMO - Главный врач">
 	<!-- favicon -->
 	<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
 	<link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
@@ -27,33 +27,36 @@
 	<div class="wrapper">
 		<!-- content -->
 		<div class="wrapper__content">
-			<!-- not found -->
-			<section class="not-found" id="not-found">
+			<!-- head doctor -->
+			<section class="doctor" id="doctor">
 				<div class="container">
-					<div class="not-found__wrap">
-						<div class="not-found__main">
-							<span class="not-found__subtitle">(Ошибка 404)</span>
-							<span class="not-found__title">Страница не найдена</span>
-							<a href="index.html" class="not-found__back">На главную</a>
+					<div class="doctor__wrapper doctor__wrapper--reverse">
+						<div class="doctor__left">
+							<picture class="doctor__img">
+								<img src="img/doctors-main.jpg" alt="Image">
+							</picture>
 						</div>
-						<div class="not-found__bottom">
-							<div class="not-found__info">
-								<span class="not-found__help">ВОЗНИКЛИ ПРОБЛЕМЫ СО СТРАНИЦЕЙ?</span>
-								<a href="#" class="not-found__btn btn btn--light">
-									<span>Напишите нам</span>
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-arrow-to"></use>
-									</svg>
-								</a>
+						<div class="doctor__right">
+							<div class="doctor__body">
+								<div class="doctor__main">
+									<ul class="doctor__tags">
+										<li class="doctor__tags-item">
+											<span class="doctor__tag doctor__tag--accent">Стаж работы 7 лет</span>
+										</li>
+										<li class="doctor__tags-item">
+											<span class="doctor__tag">Главный врач</span>
+										</li>
+									</ul>
+									<span class="doctor__title">Жиляева Зарина Михайловна</span>
+									<p class="doctor__help">Врач косметолог <br>дерматовенеролог</p>
+								</div>
+								<a href="#" class="doctor__more">Записаться</a>
 							</div>
-							<a href="mosco-web.ru" class="not-found__author" target="_blank">
-								<img src="img/moscoweb.svg" alt="MOSCOWEB">
-							</a>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- end of not found -->
+			<!-- end of head doctor -->
 		</div>
 		<!-- end of content -->
 	</div>
