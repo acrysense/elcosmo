@@ -25,13 +25,92 @@
 <body>
 	<!-- wrapper -->
 	<div class="wrapper">
+		<!-- header -->
+		<header class="header " id="header">
+			<div class="container">
+				<div class="header__top">
+					<a href="index.html" class="header__logotype">
+						<img src="img/logotype.svg" width="165" height="64" alt="EL' COSMO" class="header__logotype--default">
+						<img src="img/logotype-white-clear.svg" width="165" height="64" alt="EL' COSMO" class="header__logotype--white">
+					</a>
+					<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+						<span class="hamburger__inner"></span>
+						<span class="hamburger__inner"></span>
+					</button>
+				</div>
+				<div class="header__main">
+					<div class="c-socnav header__socnav">
+						<ul class="c-socnav__list">
+							<li class="c-socnav__item">
+								<a href="#" class="c-socnav__link">
+									<svg class="c-socnav__icon">
+										<use xlink:href="img/sprite.svg#icon-tg"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="c-socnav__item">
+								<a href="#" class="c-socnav__link">
+									<svg class="c-socnav__icon">
+										<use xlink:href="img/sprite.svg#icon-vk"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="c-socnav__item">
+								<a href="#" class="c-socnav__link">
+									<svg class="c-socnav__icon">
+										<use xlink:href="img/sprite.svg#icon-whapp"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<nav class="nav header__nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="#" class="nav__link">О клинике</a>
+							</li>
+							<li class="nav__item">
+								<div class="nav__elem">
+									<a href="#" class="nav__link">Услуги</a>
+									<div class="nav-submenu nav__dropdown">
+										<ul class="nav-submenu__list">
+											<li class="nav-submenu__item">
+												<a href="#" class="nav-submenu__link">Аппаратная косметология</a>
+											</li>
+											<li class="nav-submenu__item">
+												<a href="#" class="nav-submenu__link">Инъекционная косметология</a>
+											</li>
+											<li class="nav-submenu__item">
+												<a href="#" class="nav-submenu__link">Лазерная эпиляция</a>
+											</li>
+											<li class="nav-submenu__item">
+												<a href="#" class="nav-submenu__link">Эстетическая косметология</a>
+											</li>
+											<li class="nav-submenu__item">
+												<a href="#" class="nav-submenu__link">Массаж и SPA</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Оборудование</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Сертификаты</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Врачи</a>
+							</li>
+						</ul>
+					</nav>
+					<a href="#" class="header__btn btn btn--sm">Связаться</a>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
 		<!-- content -->
 		<div class="wrapper__content">
-			<!-- header -->
-			<header class="header" id="header">
-				<div class="container"></div>
-			</header>
-			<!-- end of header -->
 			<!-- main -->
 			<section class="main" id="main">
 				<div class="container">
@@ -266,12 +345,139 @@
 		<!-- footer -->
 		<footer class="footer" id="footer">
 			<div class="container">
-				<div class="footer__wrapper"></div>
+				<div class="footer__wrapper">
+					<div class="footer__item">
+						<div class="footer__group">
+							<span class="footer__label">связь с нами</span>
+							<a href="tel:+74951209917" class="footer__value">+7 495 120-99-17</a>
+						</div>
+						<div class="footer__group">
+							<span class="footer__label">график работы</span>
+							<span class="footer__value">
+								Ежедневно<br>
+								9:00–21:00
+							</span>
+						</div>
+					</div>
+					<div class="footer__item">
+						<div class="footer__group">
+							<span class="footer__label">адрес</span>
+							<address class="footer__value">Москва, ул. Авиационная, 77/2</address>
+						</div>
+						<div class="footer__group">
+							<span class="footer__label">социальные сети</span>
+							<a href="#" class="footer__value">Telegram</a>
+							<a href="#" class="footer__value">VK</a>
+							<a href="#" class="footer__value">WhatsApp</a>
+						</div>
+					</div>
+					<div class="footer__item">
+						<div class="footer__group">
+							<span class="footer__label">Услуги</span>
+							<a href="#" class="footer__value">Аппаратная косметология</a>
+							<a href="#" class="footer__value">Инъекционная косметология</a>
+							<a href="#" class="footer__value">Лазерная эпиляция</a>
+							<a href="#" class="footer__value">Эстетическая косметология</a>
+							<a href="#" class="footer__value">Массаж и SPA</a>
+						</div>
+					</div>
+				</div>
+				<picture class="footer__logotype">
+					<img src="img/logotype-white.svg" width="477" height="176" alt="EL' COSMO">
+				</picture>
+				<div class="footer__bottom">
+					<p class="footer__copyright">© ООО «Клиника» 2025г. Все права защищены</p>
+					<div class="footer__developer">
+						<span class="footer__developer-title">Разработка сайта</span>
+						<a href="mosco-web.ru" class="footer__developer-img">
+							<img src="img/moscoweb.svg" alt="MOSCOWEB">
+						</a>
+					</div>
+					<p class="footer__copyright">
+						<a href="#">Политика конфиденциальности</a>
+					</p>
+				</div>
 			</div>
 		</footer>
 		<!-- end of footer -->
 	</div>
 	<!-- end of wrapper -->
+	<!-- mobile menu -->
+	<div class="mobile-menu" id="mobile-menu">
+		<div class="mobile-menu__wrap">
+			<div class="mobile-menu__main">
+				<nav class="nav mobile-menu__nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#" class="nav__link">О клинике</a>
+						</li>
+						<li class="nav__item">
+							<div class="nav__elem">
+								<a href="#" class="nav__link">Услуги</a>
+								<div class="nav-submenu nav__dropdown">
+									<ul class="nav-submenu__list">
+										<li class="nav-submenu__item">
+											<a href="#" class="nav-submenu__link">Аппаратная косметология</a>
+										</li>
+										<li class="nav-submenu__item">
+											<a href="#" class="nav-submenu__link">Инъекционная косметология</a>
+										</li>
+										<li class="nav-submenu__item">
+											<a href="#" class="nav-submenu__link">Лазерная эпиляция</a>
+										</li>
+										<li class="nav-submenu__item">
+											<a href="#" class="nav-submenu__link">Эстетическая косметология</a>
+										</li>
+										<li class="nav-submenu__item">
+											<a href="#" class="nav-submenu__link">Массаж и SPA</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Оборудование</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Сертификаты</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Врачи</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="mobile-menu__bottom">
+				<div class="c-socnav mobile-menu__socnav">
+					<ul class="c-socnav__list">
+						<li class="c-socnav__item">
+							<a href="#" class="c-socnav__link">
+								<svg class="c-socnav__icon">
+									<use xlink:href="img/sprite.svg#icon-tg"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="c-socnav__item">
+							<a href="#" class="c-socnav__link">
+								<svg class="c-socnav__icon">
+									<use xlink:href="img/sprite.svg#icon-vk"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="c-socnav__item">
+							<a href="#" class="c-socnav__link">
+								<svg class="c-socnav__icon">
+									<use xlink:href="img/sprite.svg#icon-whapp"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="mobile-menu__btn btn btn--sm">Связаться</a>
+			</div>
+		</div>
+	</div>
+	<!-- end of mobile menu -->
 	<!-- scripts -->
 	<script src="libs/swiper/swiper-bundle.min.js"></script>
 	<script src="js/app.min.js"></script>
