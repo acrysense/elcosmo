@@ -714,6 +714,464 @@ svg {
   }
 }
 
+.doctors-main {
+  position: relative;
+  z-index: 1;
+  padding: 60px 0 120px;
+  color: #FFFFFF;
+  background: #448AAE;
+}
+@media screen and (max-width: 743px) {
+  .doctors-main {
+    padding: 75px 0 105px;
+  }
+}
+.doctors-main__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 50px;
+}
+@media screen and (max-width: 1023px) {
+  .doctors-main__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.doctors-main__wrapper + .doctors-main__wrapper {
+  margin-top: 57px;
+}
+@media screen and (min-width: 744px) and (max-width: 1023px) {
+  .doctors-main__wrapper + .doctors-main__wrapper {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 743px) {
+  .doctors-main__wrapper + .doctors-main__wrapper {
+    margin-top: 40px;
+  }
+}
+.doctors-main__left {
+  max-width: 418px;
+  width: 100%;
+}
+@media screen and (max-width: 1023px) {
+  .doctors-main__left {
+    max-width: none;
+  }
+}
+.doctors-main__right {
+  max-width: 592px;
+  width: 100%;
+}
+@media screen and (max-width: 1023px) {
+  .doctors-main__right {
+    max-width: none;
+  }
+}
+.doctors-main__heading {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Viaoda Libre", sans-serif;
+  font-size: 57px;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 743px) {
+  .doctors-main__heading {
+    font-size: 50px;
+  }
+}
+.doctors-main__img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 15px;
+  -webkit-box-shadow: 4px 4px 27.5px rgba(68, 99, 115, 0.17);
+          box-shadow: 4px 4px 27.5px rgba(68, 99, 115, 0.17);
+}
+.doctors-main__img::before {
+  content: "";
+  display: block;
+  padding-top: 133.016%;
+}
+.doctors-main__img img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 1023px) {
+  .doctors-main__img {
+    max-width: 540px;
+  }
+}
+.doctors-main__subtitle {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 743px) {
+  .doctors-main__subtitle {
+    font-size: 14px;
+  }
+}
+.doctors-main__title {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Viaoda Libre", sans-serif;
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1024px) {
+  .doctors-main__title--mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .doctors-main__title {
+    margin-top: 20px;
+    max-width: 80%;
+  }
+  .doctors-main__title--desktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 743px) {
+  .doctors-main__title {
+    font-size: 30px;
+  }
+}
+.doctors-main__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 24px;
+  margin-top: 48px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #FFFFFF;
+}
+@media screen and (max-width: 1023px) {
+  .doctors-main__inner {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 743px) {
+  .doctors-main__inner {
+    padding-bottom: 20px;
+  }
+}
+.doctors-main__inner-elem {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 743px) {
+  .doctors-main__inner-elem {
+    font-size: 14px;
+  }
+}
+.doctors-main__content {
+  display: -webkit-box;
+  -webkit-line-clamp: 11;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 48px;
+  font-size: 20px;
+  font-weight: normal;
+  text-overflow: ellipsis;
+}
+.doctors-main__content > * {
+  margin-bottom: 20px;
+}
+.doctors-main__content > *:last-child {
+  margin-bottom: 0;
+}
+.doctors-main__content h1, .doctors-main__content h2, .doctors-main__content h3, .doctors-main__content h4, .doctors-main__content h5, .doctors-main__content h6 {
+  font-size: 20px;
+  font-weight: normal;
+}
+@media screen and (max-width: 743px) {
+  .doctors-main__content {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .doctors-main__content h1, .doctors-main__content h2, .doctors-main__content h3, .doctors-main__content h4, .doctors-main__content h5, .doctors-main__content h6 {
+    font-size: 16px;
+  }
+}
+.doctors-main__more {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: 1;
+  -webkit-transform: translate(-50%, 50%);
+      -ms-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 14px;
+  width: 185px;
+  height: 185px;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #202325;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+.doctors-main__more > svg {
+  min-width: 23px;
+  width: 23px;
+  height: 23px;
+  color: #202325;
+}
+@media screen and (hover: hover) {
+  .doctors-main__more:hover {
+    background: #F66B52;
+  }
+}
+@media screen and (max-width: 743px) {
+  .doctors-main__more {
+    gap: 10px;
+    width: 130px;
+    height: 130px;
+    font-size: 14px;
+  }
+  .doctors-main__more > svg {
+    min-width: 15px;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.doctors {
+  padding-top: 185px;
+}
+@media screen and (min-width: 744px) and (max-width: 1023px) {
+  .doctors {
+    padding-top: 160px;
+  }
+}
+@media screen and (max-width: 743px) {
+  .doctors {
+    padding-top: 145px;
+  }
+}
+.doctors__section + .doctors__section {
+  margin-top: 120px;
+}
+@media screen and (max-width: 743px) {
+  .doctors__section + .doctors__section {
+    margin-top: 80px;
+  }
+}
+.doctors__title {
+  display: block;
+  margin-bottom: 60px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Viaoda Libre", sans-serif;
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 743px) {
+  .doctors__title {
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+}
+.doctors__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 80px 20px;
+}
+@media screen and (min-width: 744px) and (max-width: 1023px) {
+  .doctors__wrapper {
+    gap: 40px 20px;
+  }
+}
+@media screen and (max-width: 743px) {
+  .doctors__wrapper {
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .doctors__item {
+    width: calc(33.333333333% - 13.3333333333px);
+  }
+}
+@media screen and (min-width: 744px) and (max-width: 1023px) {
+  .doctors__item {
+    width: calc(50% - 10px);
+  }
+}
+@media screen and (max-width: 743px) {
+  .doctors__item {
+    width: 100%;
+  }
+}
+
+.doctors-card__img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.doctors-card__img::before {
+  content: "";
+  display: block;
+  padding-top: 130.67%;
+}
+.doctors-card__img img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (hover: hover) {
+  .doctors-card__img:hover .doctors-card__plus {
+    opacity: 1;
+  }
+}
+.doctors-card__plus {
+  position: absolute;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  pointer-events: none;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+.doctors-card__plus > svg {
+  min-width: 23px;
+  width: 23px;
+  height: 23px;
+}
+@media screen and (hover: hover) {
+  .doctors-card__plus {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.1s ease, -webkit-transform 0.2s ease-out;
+    transition: opacity 0.1s ease, -webkit-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out, opacity 0.1s ease;
+    transition: transform 0.2s ease-out, opacity 0.1s ease, -webkit-transform 0.2s ease-out;
+  }
+}
+@media screen and (hover: none) {
+  .doctors-card__plus {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+.doctors-card__img + .doctors-card__body {
+  margin-top: 20px;
+}
+.doctors-card__title {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  -webkit-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
+}
+@media screen and (max-width: 743px) {
+  .doctors-card__title {
+    font-size: 25px;
+  }
+}
+.doctors-card__help {
+  display: block;
+  margin-top: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 20px;
+  font-weight: normal;
+}
+@media screen and (max-width: 743px) {
+  .doctors-card__help {
+    font-size: 18px;
+  }
+}
+
 .contacts__top {
   margin-bottom: 88px;
 }
